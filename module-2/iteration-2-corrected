@@ -1,0 +1,31 @@
+let list = [
+    'Sunday',
+    'Monday',
+    'Tuesday', 
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+];
+
+// Using a while loop to log the list elements
+console.log('while loop');
+let i = 0;  
+while (i < list.length) {
+    console.log(list[i]);
+    i = i + 1;  
+}
+
+// Using a for loop to log the list elements
+console.log('for loop');
+for (let i = 0; i < list.length; i++) { // Corrected the increment syntax
+    console.log(list[i]);
+}
+
+// Logging list[i] outside the loop will result in undefined because i is out of scope
+// To log the last element, you can use list[list.length - 1] or keep i within scope
+console.log(list[list.length - 1]); 
+
+// Alternatively, if you want to keep i within scope and log the last element
+let j = 6;
+console.log(list[j]);

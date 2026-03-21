@@ -1,0 +1,11 @@
+let firstNumber = 5;
+let secondNumber =8;
+    // let Value1 = rValue;   //assignment
+
+ let sum = firstNumber + secondNumber;
+
+console.log(sum);
+
+sum = sum + 1;
+//Value1 = rValue;   //assignment
+
