@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Generate Cards</title>
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      padding: 12px;
+      margin-bottom: 10px;
+      width: 250px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Cards</h1>
+  <div id="cardContainer"></div>
+
+  <script>
+    const students = [
+      { name: "Ava", skill: "HTML" },
+      { name: "Noah", skill: "CSS" },
+      { name: "Mia", skill: "JavaScript" }
+    ];
+
+    const cardContainer = document.getElementById("cardContainer");
+
+    students.forEach(function (student) {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = "<h3>" + student.name + "</h3><p>Learning: " + student.skill + "</p>";
+      cardContainer.appendChild(card);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create List with JavaScript</title>
+</head>
+<body>
+  <h1>Dynamic Task List</h1>
+  <ul id="taskList"></ul>
+
+  <script>
+    const tasks = ["Study HTML", "Practice CSS", "Learn JavaScript"];
+    const taskList = document.getElementById("taskList");
+
+    tasks.forEach(function (task) {
+      const li = document.createElement("li");
+      li.textContent = task;
+      taskList.appendChild(li);
+    });
+  </script>
+</body>
+</html>

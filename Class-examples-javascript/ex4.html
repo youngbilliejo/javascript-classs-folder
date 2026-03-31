@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>querySelector Example</title>
+  <style>
+    .highlight {
+      color: darkblue;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="mainTitle">Selectors</h1>
+  <p class="highlight">This text will be selected with a class selector.</p>
+
+  <script>
+    const title = document.querySelector("#mainTitle");
+    const paragraph = document.querySelector(".highlight");
+
+    title.textContent = "querySelector Found Me";
+    console.log(paragraph.textContent);
+  </script>
+</body>
+</html>

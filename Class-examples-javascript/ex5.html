@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>querySelectorAll Example</title>
+</head>
+<body>
+  <h1>Shopping List</h1>
+  <ul>
+    <li class="item">Milk</li>
+    <li class="item">Bread</li>
+    <li class="item">Fruit</li>
+  </ul>
+
+  <script>
+    const items = document.querySelectorAll(".item");
+
+    items.forEach(function (item, index) {
+      item.textContent = (index + 1) + ". " + item.textContent;
+    });
+  </script>
+</body>
+</html>

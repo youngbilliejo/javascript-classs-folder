@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toggle CSS Class</title>
+  <style>
+    .card {
+      padding: 16px;
+      border: 1px solid #ccc;
+      width: 220px;
+    }
+
+    .active {
+      background-color: gold;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <div class="card" id="card">Click the button to highlight me.</div>
+  <button id="toggleBtn">Toggle Highlight</button>
+
+  <script>
+    const card = document.querySelector("#card");
+    const toggleBtn = document.querySelector("#toggleBtn");
+
+    toggleBtn.addEventListener("click", function () {
+      card.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

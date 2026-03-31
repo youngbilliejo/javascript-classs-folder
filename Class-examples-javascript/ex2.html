@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Window Object Example</title>
+</head>
+<body>
+  <h1>Window Object</h1>
+  <button id="showInfoBtn">Show Browser Info</button>
+
+  <script>
+    const button = document.getElementById("showInfoBtn");
+
+    button.addEventListener("click", function () {
+      console.log("Current URL:", window.location.href);
+      console.log("Window width:", window.innerWidth);
+      console.log("Window height:", window.innerHeight);
+      alert("Check the console for window details.");
+    });
+  </script>
+</body>
+</html>

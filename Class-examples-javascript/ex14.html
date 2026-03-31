@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic-Tac-Toe Board</title>
+  <style>
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      gap: 5px;
+      width: max-content;
+      margin-top: 20px;
+    }
+
+    .cell {
+      width: 100px;
+      height: 100px;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #333;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tic-Tac-Toe Board</h1>
+  <p id="playerTurn">Current player: X</p>
+  <div class="board" id="board"></div>
+
+  <script>
+    const board = document.getElementById("board");
+    const playerTurn = document.getElementById("playerTurn");
+    let currentPlayer = "X";
+
+    for (let i = 0; i < 9; i++) {
+      const cell = document.createElement("div");
+      cell.className = "cell";
+
+      cell.addEventListener("click", function () {
+        if (cell.textContent === "") {
+          cell.textContent = currentPlayer;
+          currentPlayer = currentPlayer === "X" ? "O" : "X";
+          playerTurn.textContent = "Current player: " + currentPlayer;
+        }
+      });
+
+      board.appendChild(cell);
+    }
+  </script>
+</body>
+</html>

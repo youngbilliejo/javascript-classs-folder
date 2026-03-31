@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document Object Example</title>
+</head>
+<body>
+  <h1>Brent is a Fucking Moron</h1>
+  <p id="status">Waiting for an update...</p>
+  <button id="updateBtn">fucK bRent</button>
+
+  <script>
+    const statusText = document.getElementById("status");
+    const updateBtn = document.getElementById("updateBtn");
+
+    updateBtn.addEventListener("click", function () {
+      statusText.textContent = "The document object changed this paragraph.";
+        document.querySelector('h1').textContent="Hit Buttons"
+      document.getElementById("updateBtn").textContent = " How the Fuck!"
+    });
+  </script>
+</body>
+</html>
