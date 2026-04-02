@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefits of Massage | Melanie's Massage and Bodywork</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+        :root {
+            --primary: #4a6c6f;
+            --accent: #d4a373;
+            --light: #f8f5f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', system-ui, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #fff;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+            height: 65vh;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .header-content {
+            max-width: 800px;
+            padding: 0 20px;
+            z-index: 2;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.8rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+        }
+
+        header p {
+            font-size: 1.4rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: white;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+            letter-spacing: 2px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 20px 100px;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.6rem;
+            color: var(--primary);
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        h2:after {
+            content: '';
+            width: 80px;
+            height: 3px;
+            background: var(--accent);
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .intro {
+            font-size: 1.25rem;
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 50px;
+            color: #444;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 16px 20px 16px 60px;
+            margin-bottom: 12px;
+            background: #fff;
+            border-left: 6px solid var(--accent);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            position: relative;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        li:hover {
+            transform: translateX(10px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        li:before {
+            content: '✦';
+            position: absolute;
+            left: 22px;
+            color: var(--accent);
+            font-size: 1.4rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .stress-relief {
+            background: var(--light);
+            padding: 40px;
+            border-radius: 12px;
+        }
+
+        .stress-relief h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+        }
+
+        footer {
+            background: #222;
+            color: #ddd;
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+
+        .cta {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 80px 0;
+            border-radius: 12px;
+        }
+
+        .cta h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #222;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .btn:hover {
+            background: #e0b070;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.8rem;
+            }
+            h2 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Melanie's Massage & Bodywork</div>
+        <div class="header-content">
+            <h1>Benefits of Massage</h1>
+            <p>Relax • Restore • Rejuvenate</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Why Massage Therapy?</h2>
+            
+            <p class="intro">
+                Experts estimate that upwards of ninety percent of disease is stress-related. 
+                And perhaps nothing ages us faster, internally and externally, than high stress. 
+                Massage is one of the most effective tools for managing this stress, which translates into numerous physical and mental benefits.
+            </p>
+
+            <div class="benefits-grid">
+                <!-- Stress-related benefits -->
+                <div class="stress-relief">
+                    <h3>Massage helps manage stress by:</h3>
+                    <ul>
+                        <li>Decreased anxiety</li>
+                        <li>Enhanced sleep quality</li>
+                        <li>Greater energy</li>
+                        <li>Improved concentration</li>
+                        <li>Increased circulation</li>
+                        <li>Reduced fatigue</li>
+                    </ul>
+                </div>
+
+                <!-- Specific health benefits -->
+                <div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 25px; color: var(--primary);">Massage can also help with:</h3>
+                    <ul>
+                        <li>Alleviate <strong>low-back pain</strong> and improve range of motion</li>
+                        <li>Assist with shorter, easier labor for <strong>expectant mothers</strong> and shorten maternity hospital stays</li>
+                        <li>Ease <strong>medication dependence</strong></li>
+                        <li>Enhance <strong>immunity</strong> by stimulating lymph flow — the body's natural defense system</li>
+                        <li>Exercise and stretch <strong>weak, tight, or atrophied muscles</strong></li>
+                        <li>Help <strong>athletes</strong> of any level prepare for, and recover from, strenuous workouts</li>
+                        <li>Improve the condition of the body's largest organ — the <strong>skin</strong></li>
+                        <li>Increase <strong>joint flexibility</strong></li>
+                        <li>Lessen <strong>depression and anxiety</strong></li>
+                        <li>Promote tissue regeneration, reducing <strong>scar tissue and stretch marks</strong></li>
+                        <li>Pump oxygen and nutrients into tissues and vital organs, improving <strong>circulation</strong></li>
+                        <li>Reduce <strong>postsurgery adhesions and swelling</strong></li>
+                        <li>Reduce <strong>spasms and cramping</strong></li>
+                        <li>Relax and soften injured, tired, and <strong>overused muscles</strong></li>
+                        <li>Release endorphins — amino acids that work as the body's natural <strong>painkiller</strong></li>
+                        <li>Relieve <strong>migraine</strong> pain</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta">
+            <h3>Ready to experience these benefits for yourself?</h3>
+            <p style="max-width: 600px; margin: 0 auto 25px; font-size: 1.2rem; opacity: 0.95;">
+                Schedule a relaxing and therapeutic massage session with Melanie today.
+            </p>
+            <a href="#" onclick="alert('In a real website this would open your booking system or contact form.');" class="btn">Book Your Session Now</a>
+        </div>
+    </main>
+
+    <footer>
+        <p style="margin-bottom: 15px; font-size: 1.1rem;">
+            <strong>Melanie's Massage and Bodywork</strong>
+        </p>
+        <p>Owatonna, Minnesota • Professional Licensed Massage Therapy</p>
+        <p style="margin-top: 30px; opacity: 0.7; font-size: 0.95rem;">
+            &copy; 2026 Melanie's Massage and Bodywork. All rights reserved.<br>
+            This is a single-file recreation of the original page content.
+        </p>
+    </footer>
+
+    <script>
+        // Simple smooth scroll for any future internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add a little scroll effect to the header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.height = '50vh';
+            } else {
+                header.style.height = '65vh';
+            }
+        });
+
+        console.log('%c✅ Single-file Benefits of Massage webpage loaded successfully!', 'color: #4a6c6f; font-size: 14px;');
+    </script>
+</body>
+</html>
